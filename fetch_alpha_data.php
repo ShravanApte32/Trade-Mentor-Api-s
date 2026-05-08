@@ -3,7 +3,7 @@ header('Content-Type: application/json');
 require_once 'db.php';
 
 // Configuration
-$apiKey = getenv('ALPHA_VANTAGE_API_KEY') ?: "5C1DIBOKZL4T8DWR";
+$apiKey = "5C1DIBOKZL4T8DWR";
 $enableMockMode = false; // FALSE for real data
 $symbols = explode(',', $_GET['symbol'] ?? 'RELIANCE.BSE');
 $requestedTimeframe = $_GET['timeframe'] ?? '1D';
